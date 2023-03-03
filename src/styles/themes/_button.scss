@@ -1,0 +1,86 @@
+.btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 80%;
+
+    &__delete{
+        background-color: red;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+    }
+    &__modify{
+        background-color: #18455B;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        border: 2px solid #fff;
+        transition: all 0.3s ease;
+        margin-block: 10px;
+        &:hover{
+            background-color: #FD556C;
+            color: rgb(0, 0, 0);
+        }
+
+    }
+    &__close{
+       
+        background-color: #0F2439;
+        color: #C5A459;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        border: 2px solid #C5A459;
+        transition: all 0.3s ease;
+        margin-block: 10px;
+        &:hover{
+            background-color: #FD556C;
+            color: white;
+            border: 2px solid white;
+
+        }
+    }
+
+    
+    
+    &__primary{
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: rgb(199, 183, 183);
+            color: rgb(0, 0, 0);
+        }
+    }
+    
+}

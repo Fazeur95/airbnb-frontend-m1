@@ -1,0 +1,45 @@
+$col-width: 300px;
+$grid-gap: 20px;
+.filter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(#{$col-width}, 1fr));
+    grid-gap: $grid-gap;
+ 
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  
+  padding: 20px;
+  
+  &__button {
+    position: flex;
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+    :hover {
+      opacity: 0.7;
+      color: red;
+    }
+    img {
+      width: 40px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    
+    }
+  }
+ 
+  
+  
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: grid;
+    align-items: flex-start;
+    text-align: center;
+
+   
+  }
+}
+  

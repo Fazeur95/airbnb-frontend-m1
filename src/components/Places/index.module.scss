@@ -1,0 +1,49 @@
+.wrapper {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    
+    //Center the content
+    margin: 0 auto;
+    //Add some space between the content and the border
+}
+  .form__place {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #f5a623;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      option {
+        padding: 10px;
+        
+      }
+      
+    }
+  }
+  
