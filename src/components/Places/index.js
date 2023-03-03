@@ -4,6 +4,7 @@ import Link from "next/link";
 import placeService from "../../services/place.service";
 import typeService from "../../services/type.service";
 import Button from "../../components/Button";
+import Select from "../../components/Select";
 import Input from "../../components/Input";
 import Notification from "../../components/Notification";
 import userService from "../../services/user.service";
@@ -13,6 +14,7 @@ import userService from "../../services/user.service";
 //Create a component to add places
 
 const AddPlace = () => {
+    const [userLogged, setUserLogged] = React.useState(false);
     const [userId, setUserId] = React.useState(null);
     const [message, setMessage] = React.useState(null);
     const [types, setTypes] = React.useState([]);
@@ -29,6 +31,15 @@ const AddPlace = () => {
         postalCode : "",
     
     });
+    //Check if user is logged in
+
+    React.useEffect(() => {
+        userService.getMe().then((data) => {
+            setUserLogged(true);
+        });
+        //If user is not logged in, redirect to login page
+      
+    }, []);
 
     //Get user id if logged in
 
